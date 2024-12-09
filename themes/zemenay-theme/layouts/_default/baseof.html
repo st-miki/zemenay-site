@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-50">
+    {{ partial "header.html" . }}
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+</body>
+</html>
+

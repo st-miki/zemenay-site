@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container mx-auto px-4 py-12">
+    <!-- Hero Section -->
+    <div class="text-center mb-16">
+        <h1 class="text-5xl font-bold mb-4">{{ .Title }}</h1>
+        <p class="text-xl text-gray-600">{{ .Description }}</p>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+        {{ .Content }}
+    </div>
+</div>
+{{ end }}
+
